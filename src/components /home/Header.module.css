@@ -4,7 +4,7 @@
 
   background-image: url("../../assets/Home/hero.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100vw 400px;
   display: flex;
 }
 .hero_text {
@@ -19,14 +19,14 @@
 
 .hero_text h1 {
   font-family: "Nunito";
-  font-size: 45px;
+  font-size: 50px;
   color: #6c6c6c;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
 }
 
 .hero_text span {
-  font-size: 60px;
+  font-size: 55px;
   color: #42c0f6;
   font-family: "Nunito";
   font-weight: 900;
@@ -35,8 +35,9 @@
 .hero_text h5 {
   font-size: 20px;
   color: #6c6c6c;
-  font-weight: 900;
+  font-weight: 700;
   margin-top: 10px;
+  width: 450px;
 }
 
 .links {
@@ -78,4 +79,148 @@
   font-weight: 900;
   margin-right: 60px;
   border: #42c0f6 3px solid;
+}
+
+@media (max-width: 1026px) {
+  .main {
+    width: 100vw;
+    height: 400px;
+
+    background-image: url("../../assets/Home/hero.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 400px;
+  }
+  .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: c;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+  .hero_text h1 {
+    font-size: 30px;
+  }
+  .hero_text span {
+    font-size: 40px;
+  }
+  .hero_text h5 {
+    font-size: 15px;
+  }
+  .links {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .btn_sign {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .btn_learn {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 769px) {
+  .main {
+    width: 100vw;
+    height: 300px;
+
+    background-image: url("../../assets/Home/hero.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 300px;
+  }
+  .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: c;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .hero_text h1 {
+    font-size: 24px;
+  }
+  .hero_text span {
+    font-size: 28px;
+  }
+  .hero_text h5 {
+    font-size: 12px;
+  }
+  .links {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .btn_sign {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .btn_learn {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .sign_up_btn_div p {
+    font-size: 8px;
+    color: #707070;
+    width: 110px;
+  }
+}
+
+@media (max-width: 426px) {
+  .main {
+    width: 100vw;
+    height: 300px;
+
+    background-image: url("../../assets/Home/hero.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 300px;
+  }
+  .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: c;
+    width: 225px;
+    margin-left: 5px;
+    margin-top: 30px;
+  }
+  .hero_text h1 {
+    font-size: 18px;
+  }
+  .hero_text span {
+    font-size: 22px;
+  }
+  .hero_text h5 {
+    font-size: 11px;
+    width: 200px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .btn_sign {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .btn_learn {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .sign_up_btn_div p {
+    font-size: 7px;
+    color: #707070;
+    width: 100px;
+  }
 }
