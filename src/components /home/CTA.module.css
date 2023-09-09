@@ -1,0 +1,254 @@
+.main_div {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+}
+.img_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+
+  padding-right: 200px;
+  margin-bottom: 50px;
+}
+.img_div img {
+  width: 625px;
+  height: 420px;
+  margin-bottom: 50px;
+}
+
+.cta_Text_div {
+  position: relative;
+  right: 60px;
+}
+.cta_text {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  height: 80%;
+  width: 100%;
+}
+
+.cta_text h1 {
+  font-family: "nunito";
+  font-size: 40px;
+  font-weight: 800;
+  color: #6c6c6c;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+
+.cta_text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #6c6c6c;
+  margin-bottom: 50px;
+  width: 600px;
+}
+
+.cta_text p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6c6c6c;
+  width: 600px;
+  margin-bottom: 70px;
+}
+.btn_sign {
+  width: 175px;
+  height: 35px;
+  background-color: #f1187a;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+.btn_enquire {
+  width: 175px;
+  height: 35px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  color: grey;
+  font-size: 20px;
+  font-weight: 900;
+  margin-right: 60px;
+  border: #42c0f6 3px solid;
+}
+
+@media (max-width: 1025px) {
+  .main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+  }
+  .img_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  .cta_Text_div {
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .cta_text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    height: 80%;
+  }
+  .img_div img {
+    width: 380px;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  .cta_text h1 {
+    font-size: 30px;
+    width: 400px;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+  .cta_text h2 {
+    font-size: 25px;
+    width: 420px;
+    margin-bottom: 20px;
+  }
+  .cta_text p {
+    font-size: 18px;
+    width: 400px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  .main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+  }
+  .img_div {
+    display: none;
+  }
+  .cta_Text_div {
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .cta_text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    height: 80%;
+  }
+  .img_div img {
+    width: 380px;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  .cta_text h1 {
+    font-size: 30px;
+    width: 400px;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+  .cta_text h2 {
+    font-size: 25px;
+    width: 600px;
+    margin-bottom: 20px;
+  }
+  .cta_text p {
+    font-size: 18px;
+    width: 650px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 426px) {
+  .main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+  }
+  .img_div {
+    display: none;
+  }
+  .cta_Text_div {
+    width: 100vw;
+  }
+  .cta_text {
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+  }
+
+  .cta_text h1 {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+  .cta_text h2 {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cta_text p {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .button_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn_sign {
+    width: 60vw;
+    height: 40px;
+    background-color: #f1187a;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 0;
+  }
+
+  .btn_enquire {
+    width: 60vw;
+    height: 40px;
+
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    color: grey;
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 0;
+    border: #42c0f6 3px solid;
+    margin-bottom: 10px;
+  }
+}
