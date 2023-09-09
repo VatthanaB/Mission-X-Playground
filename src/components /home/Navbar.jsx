@@ -5,7 +5,9 @@ import levelUp from "../../assets/NavBar/LevelUpWorks-white.png";
 import avatar from "../../assets/NavBar/Avatar-white.png";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const loginHandler = props.loginHandler;
+  const signupHandler = props.signupHandler;
   return (
     <div>
       <ul className={styles.ul}>
@@ -33,9 +35,9 @@ export default function Navbar() {
             </div>
             <div className={styles.register}>
               <img className={styles.avatar_img} src={avatar} alt="" />
-              <a href="about.asp">REGISTER</a>
+              <p onClick={signupHandler}>REGISTER</p>
               <span>|</span>
-              <a href="about.asp">LOGIN</a>
+              <p onClick={loginHandler}>LOGIN</p>
             </div>
           </div>
         </li>

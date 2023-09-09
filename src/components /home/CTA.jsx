@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./CTA.module.css";
 import classroom from "../../assets/Home/classroom.png";
 
-export default function CTA() {
+export default function CTA(props) {
+  const signupHandler = props.signupHandler;
   return (
     <div className={styles.main_div}>
       <div className={styles.img_div}>
@@ -19,7 +20,9 @@ export default function CTA() {
           </p>
           <div className={styles.button_div}>
             <button className={styles.btn_enquire}>ENQUIRE NOW</button>
-            <button className={styles.btn_sign}>SIGN UP</button>
+            <button onClick={signupHandler} className={styles.btn_sign}>
+              SIGN UP
+            </button>
           </div>
         </div>
       </div>

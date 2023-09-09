@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Header.module.css";
 
-export default function Header() {
+export default function Header(props) {
+  const signupHandler = props.signupHandler;
   return (
     <div className={styles.main}>
       <div className={styles.hero_text}>
@@ -15,7 +16,10 @@ export default function Header() {
         <div className={styles.links}>
           <button className={styles.btn_learn}> LEARN MORE</button>
           <div className={styles.sign_up_btn_div}>
-            <button className={styles.btn_sign}> SIGN UP</button>
+            <button onClick={signupHandler} className={styles.btn_sign}>
+              {" "}
+              SIGN UP
+            </button>
             <p>
               *Basic subscription includes the first 15 projects free of charge.
             </p>

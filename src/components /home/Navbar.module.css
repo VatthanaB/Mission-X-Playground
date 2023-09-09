@@ -60,6 +60,16 @@
   color: white;
   font-weight: 700;
 }
+.register p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+.register p:hover {
+  cursor: pointer;
+}
 .avatar_img {
   width: 24px;
   height: 24px;
