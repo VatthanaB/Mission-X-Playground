@@ -96,22 +96,18 @@
 .cross_image {
   width: 40px !important;
   height: 40px !important;
-  position: absolute;
-  left: 700px;
-  top: 15px;
 
-  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 10px;
 }
 
 @media (max-width: 1441px) {
   .cross_image {
     width: 40px !important;
     height: 40px !important;
-    position: absolute;
-    left: 660px;
-    top: 15px;
-
-    z-index: 2;
   }
 }
 
@@ -124,15 +120,6 @@
     margin: 0 auto;
     background-color: #ffffff;
   }
-  .cross_image {
-    width: 40px !important;
-    height: 40px !important;
-    position: absolute;
-    left: 660px;
-    top: 15px;
-
-    z-index: 2;
-  }
 }
 @media (max-width: 769px) {
   .main_div {
@@ -142,15 +129,6 @@
     width: 90vw;
     margin: 0 auto;
     background-color: #ffffff;
-  }
-  .cross_image {
-    width: 40px !important;
-    height: 40px !important;
-    position: absolute;
-    left: 640px;
-    top: 13px;
-
-    z-index: 2;
   }
 }
 @media (max-width: 426px) {
@@ -168,12 +146,6 @@
   .cross_image {
     width: 30px !important;
     height: 30px !important;
-    position: absolute;
-    left: 370px;
-    top: 10px;
-    display: flex !important;
-
-    z-index: 2;
   }
   .st input {
     width: 150px;
@@ -204,17 +176,7 @@
   .st img {
     display: none;
   }
-  .cross_image {
-    width: 30px !important;
-    height: 30px !important;
 
-    position: absolute;
-    left: 315px;
-    top: 10px;
-    display: flex !important;
-
-    z-index: 2;
-  }
   .st input {
     width: 150px;
     height: 30px;
@@ -262,7 +224,6 @@
   .cross_image {
     width: 25px !important;
     height: 25px !important;
-    left: 270px;
   }
   .login_sign_div h2 {
     font-size: 12px;

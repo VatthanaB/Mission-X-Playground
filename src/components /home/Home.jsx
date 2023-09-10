@@ -32,7 +32,12 @@ export default function Home() {
     <div className={styles.background}>
       <div className={styles.center}>
         <div className={styles.main_div}>
-          <div></div>
+          <img
+            onClick={crossHandler}
+            className={styles.cross_image}
+            src={esc}
+            alt=""
+          />
 
           <div className={styles.st}>
             <img src={students} alt="" />
@@ -46,12 +51,6 @@ export default function Home() {
             <button className={styles.login_btn}>Log In</button>
           </div>
           <div className={`${styles.st} ${styles.st_right}`}>
-            <img
-              onClick={crossHandler}
-              className={styles.cross_image}
-              src={esc}
-              alt=""
-            />
             <img src={teachers} alt="" />
             <h1>Teachers</h1>
             <div className={styles.login_sign_div}>
@@ -71,6 +70,12 @@ export default function Home() {
     <div className={styles.background}>
       <div className={styles.center}>
         <div className={`${styles.main_div} ${styles.main_div_signup}`}>
+          <img
+            onClick={crossHandler}
+            className={styles.cross_image}
+            src={esc}
+            alt=""
+          />
           <div className={`${styles.st} ${styles.st_signup}`}>
             <img src={students} alt="" />
             <h1>Students</h1>
@@ -85,12 +90,6 @@ export default function Home() {
             <button className={styles.login_btn}>Log In</button>
           </div>
           <div className={`${styles.st} ${styles.st_right}`}>
-            <img
-              onClick={crossHandler}
-              className={styles.cross_image}
-              src={esc}
-              alt=""
-            />
             <img src={teachers} alt="" />
             <h1>Teachers</h1>
             <div className={styles.login_sign_div}>
