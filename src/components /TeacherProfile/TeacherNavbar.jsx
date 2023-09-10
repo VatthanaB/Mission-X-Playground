@@ -3,11 +3,12 @@ import nzflag from "../../assets/NavBar/NZFlag.png";
 import maoriflag from "../../assets/NavBar/MaoriFlag.png";
 import levelUp from "../../assets/NavBar/LevelUpWorks-white.png";
 import avatar from "../../assets/NavBar/Avatar-white.png";
-import styles from "./Navbar.module.css";
+import styles from "./TeacherNavbar.module.css";
 
-export default function Navbar(props) {
-  const loginHandler = props.loginHandler;
-  const signupHandler = props.signupHandler;
+export default function TeacherNavbar(props) {
+  const teacherDB = props.teacherDB;
+  const teacherImg = teacherDB[1].profile_pic;
+  const teacherName = teacherDB[1].name;
   return (
     <div>
       <ul className={styles.ul}>
@@ -34,10 +35,12 @@ export default function Navbar(props) {
               <img src={maoriflag} alt="" />
             </div>
             <div className={styles.register}>
-              <img className={styles.avatar_img} src={avatar} alt="" />
-              <p onClick={signupHandler}>REGISTER</p>
-              <span>|</span>
-              <p onClick={loginHandler}>LOGIN</p>
+              <img
+                className={styles.avatar_img}
+                src={teacherImg}
+                alt="teacherPicture"
+              />
+              <p>{teacherName}</p>
             </div>
           </div>
         </li>
