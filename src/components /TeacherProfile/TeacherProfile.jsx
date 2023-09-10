@@ -28,6 +28,9 @@ export default function TeacherProfile() {
       course: "Beginner",
     },
   ];
+  const dashboardButtonHandler = () => {
+    window.location.href = "/Teacher-dashboard";
+  };
   return (
     <div>
       <TeacherNavbar teacherDB={teacherDB} />
@@ -68,7 +71,12 @@ export default function TeacherProfile() {
             {" "}
             BACK TO PROJECTS
           </button>
-          <button className={styles.back_button_dash}>BACK TO DASHBOARD</button>
+          <button
+            onClick={dashboardButtonHandler}
+            className={styles.back_button_dash}
+          >
+            BACK TO DASHBOARD
+          </button>
         </div>
       </div>
 
